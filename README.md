@@ -7,12 +7,15 @@
 Code is provided for the tasks but somewhere code is missing, and the format is not appropriate. So, do it yourself and complete the provided tasks.
 
 **TASK 1:** 
+
 Create a Restful API in Python with Flask for displaying the list of employees with browser and Postman, and record the screenshots for both.
 
 **TASK 2:** 
+
 Create a Restful API in python with Flask for displaying a particular emp_no. record with browser and Postman, and record the screenshots for both.
 
 **TASK 3:** 
+
 Create a Restful API in Python with Flask for the CRUD operations specifically get, put, and delete with Postman only, and record the screenshots for three of the operations.
 
 <a href="https://github.com/cloudthat-devops/genpact_capstone_batch1/blob/main/Python/Python_readme.pdf">See the Python task here</a>
@@ -33,11 +36,12 @@ Create a Restful API in Python with Flask for the CRUD operations specifically g
 ## Terraform Task :
 
 **Problem Statement:** 
-Launch an Ubuntu EC2 instance (t2.micro) to be used as your terraform workstation.
 
-From that WS, using terraform, launch an EC2 instance (**Instance type:** t2.micro, OS: Red Hat Linux) to be used as an ansible workstation for the ansible task.
+1. Launch an Ubuntu EC2 instance (t2.micro) to be used as your terraform workstation.
 
-Ensure that you create a key (using ssh-keygen) and use it while launching the EC2, so that we can SSH into the ansible WS once it is created. 
+2. From that WS, using terraform, launch an EC2 instance (**Instance type:** t2.micro, OS: Red Hat Linux) to be used as an ansible workstation for the ansible task.
+
+3. Ensure that you create a key (using ssh-keygen) and use it while launching the EC2, so that we can SSH into the ansible WS once it is created. 
 
 ### Hints: 
 In your terraform WS, install terraform using following commands
@@ -82,6 +86,7 @@ terraform apply
 
 ## Ansible Tasks:
 **Problem Statement:**
+
 Once you have created new instance using terraform (as part of terraform task), ssh into that instance and install ansible in it. After that, you have to install httpd webserver in the managed node. You don’t have separate managed nodes.
 So use your ansible workstation itself as the managed node by adding the below line in your host inventory file:
 #### localhost ansible_connection = local 
@@ -94,11 +99,9 @@ $ sudo yum install python3.8 wget -y
 $ sudo pip3 install awscli boto boto3 ansible
 $ ansible --version
 ```
-
 Use aws configure and give your credentials
 
 Create a inventory in the location /etc/ansible/hosts
-
 ```
 localhost ansible_connection=local 
 ```
@@ -116,8 +119,9 @@ Make sure the webserver is running
 ## Docker & Kubernetes Task:
 Build a docker image to use the python api and push it to the DockerHub. Create a pod and nodeport service with that Docker image.
   
-**Hint:** A KOPS cluster would be provided to you. You can use the worker nodes to write DockerFile and build image
-**Hint:** Use the DockerFile provided to you if needed to create the docker image
+**Hint-1:** A KOPS cluster would be provided to you. You can use the worker nodes to write DockerFile and build image
+
+**Hint-2:** Use the DockerFile provided to you if needed to create the docker image
  
 Create the DockerFile, requirements.txt and python api code in the same directory. use the following commands to build the image and push it to docker hub
   
