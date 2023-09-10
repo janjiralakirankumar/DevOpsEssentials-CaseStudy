@@ -2,7 +2,7 @@
 
 ## Python Task
 
-#### Guideline for Python, API with Python, RDBMS ( Capestone_project ):
+### Guideline for Python, API with Python, RDBMS ( Capestone_project ):
 
 Code is provided for the tasks but somewhere code is missing, and the format is not appropriate. So, do it yourself and complete the provided tasks.
 
