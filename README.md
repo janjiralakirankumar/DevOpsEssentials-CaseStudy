@@ -20,17 +20,19 @@ Code is provided for the tasks but somewhere code is missing, and the format is 
 
 ## AWS HAPROXY TASK
 
-### Create two EC2 instances and install apache2 web-server in it. Launch the third EC2 instance and install HA-PROXY in it. The HA-PROXY instance should act as a load balancer for the two Apache web-server instances
+1. Create two EC2 instances and install apache2 web-server in it.
+2. Launch the third EC2 instance and install HA-PROXY in it. The HA-PROXY instance should act as a load balancer for the two Apache web-server instances
 
 <a href="https://github.com/cloudthat-devops/genpact_capstone_batch1/blob/main/AWS_HAPROXY/AWS%20Hands%20on%20Lab-Hproxy.pdf">See the solution here</a>
 
 <a href="https://github.com/cloudthat-devops/genpact_capstone_batch1/blob/main/AWS_HAPROXY/haproxy_lab_notes.md">See the alternate solution here</a>
 
 ## Terraform Task :
-### Problem Statement: Launch an Ubuntu EC2 instance (t2.micro) to be used as your terraform workstation.  From that WS, using terraform, launch an EC2 instance (instance type: t2.micro, OS: Red Hat Linux) to be used as an ansible workstation for the ansible task.  Ensure that you create a key (using ssh-keygen) and use it while launching the EC2, so that we can SSH into the ansible WS once it is created. 
+
+**Problem Statement:** Launch an Ubuntu EC2 instance (t2.micro) to be used as your terraform workstation. From that WS, using terraform, launch an EC2 instance (**Instance type:** t2.micro, OS: Red Hat Linux) to be used as an ansible workstation for the ansible task.  Ensure that you create a key (using ssh-keygen) and use it while launching the EC2, so that we can SSH into the ansible WS once it is created. 
+
 ### Hints: 
 In your terraform WS, install terraform using following commands
-
 
 ```
 $ sudo apt update
@@ -40,7 +42,7 @@ $ unzip terraform_1.0.11_linux_amd64.zip
 $ sudo mv terraform /usr/local/bin
 ```
 
-install the aws cli
+#### Install the aws cli
 
 ```
 $ sudo apt-get install python3-pip -y
