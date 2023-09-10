@@ -24,7 +24,7 @@ Create a Restful API in Python with Flask for the CRUD operations specifically g
 
 <a href="https://github.com/cloudthat-devops/genpact_capstone_batch1/blob/main/Python/api.py">See the Python solution code here</a>
 
-## AWS HAPROXY TASK
+## AWS HAProxy TASK
 
 1. Create two EC2 instances and install apache2 web-server in it.
 2. Launch the third EC2 instance and install HA-PROXY in it. The HA-PROXY instance should act as a load balancer for the two Apache web-server instances
